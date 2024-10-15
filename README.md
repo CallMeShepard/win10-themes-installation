@@ -1,2 +1,40 @@
-# win10-themes-installation
-Using SecureUxTheme &amp; StartIsBack &amp; Windhawk
+# Установка кастомных тем, иконок и панели задач для Windows 10
+
+## Проверено на
+- **ОС**: Windows 10
+- **Версия**: 22H2
+- **Сборка**: 19045.5011
+
+## Установка обоев на проводник через [SecureUxTheme](https://github.com/namazso/SecureUxTheme)
+Проверено на [Release v2.2.0](https://github.com/namazso/SecureUxTheme/releases/tag/v2.2.0)
+
+1. Запустить `ThemeTool.exe` от имени администратора и пропатчить систему через кнопку `Install`.
+2. Убедиться, что строки `Installed` и `Loaded` равны `Yes`.
+3. Скачать обои, содержащие файлы `.theme`.
+4. Поместить их в папку `%WINDIR%\Resources\Themes`.
+5. В `ThemeTool` убедиться, что новые темы появились. Если что-то не нужно заменять (например, курсоры), отметить галочкой `Ignore`.
+6. Нажать `Patch and Apply`.
+
+## Установка Windows 7 панели задач и меню Пуск через [StartIsBack++ 2.9.20](https://www.startisback.com/)
+1. Запустить `StartIsBackCfg.exe`.
+2. Перейти на вкладку "Внешний вид".
+3. Справа от строки "Настройте внешний вид" нажать на значок `+`.
+4. Выбрать изображение Orb для замены значка Пуск.
+5. Настроить стили оформления меню, кнопки Пуск и панели задач в той же вкладке.
+6. Применить изменения.
+
+## Вечная "лицензия" для [StartIsBack++ 2.9.20](https://www.startisback.com/)
+Источник гайда по взлому: [CrackSupport на Reddit](https://www.reddit.com/r/CrackSupport/comments/xpff73/startallback/)
+
+1. Открыть директорию с программой.
+2. Убедиться, что в директории есть файл `StartIsBack32.dll`.
+3. Переименовать его в `StartIsBack32_backup.dll`.
+4. Заменить его на файл `StartIsBack32_nolicense.dll`, переименовав в `StartIsBack32.dll`.
+5. Запустить `StartIsBackCfg.exe` и перейти во вкладку "О программе".
+6. Убедиться, что надпись "Испытание программы. Осталось дней: 30" заменена на `SIGNATURE CHECK FAILED` красным цветом.
+
+## Установка иконок для системы через [Windhawk](https://windhawk.net/) [WIP]
+1. Запустить Windhawk.
+2. Нажать "Поиск модификаций" и найти модификацию `Resource Redirect`.
+3. Нажать на кнопку "Описание" > Установить > Продолжить.
+4. После установки перейти во вкладку "Настройки" и настроить иконки.
